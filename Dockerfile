@@ -5,7 +5,7 @@ FROM ubuntu:22.04
 WORKDIR /app
 
 # 复制本地文件到容器中（可选）
-COPY ./lyra /lyra
+COPY ./lyra-fixed /lyra
 COPY ./bazel_5.3.2-linux-x86_64.deb /app/bazel_5.3.2-linux-x86_64.deb
 RUN apt update
 RUN apt install g++ zlib1g-dev unzip git python3 -y
